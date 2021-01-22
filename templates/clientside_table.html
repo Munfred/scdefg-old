@@ -35,14 +35,10 @@
 
             {% endfilter %}
         </div>
-
         <form>
             <div>
-                <p>If you would like to highlight genes on the resulting volcano plot, add one gene per line. <br>
-                    Gene name (<samp>bus-1</samp>) or WormBase ID are accepted (<samp>WBGene00018223</samp>) <br>
-                    Partial matches will be highlighted , e.g. just <samp>bus</samp> highlight bus-1 and bus-18 genes.
-                </p>
-                <textarea name="genes" rows="10" cols="30">nlp
+                <p>To highlight genes add one gene per line below. Gene names (<samp>bus-1</samp>) or ID are accepted (<samp>WBGene00018223</samp>) </p>
+                <textarea name="genes" rows="5" cols="30">nlp
 flp
 ins</textarea>
             </div>
@@ -59,15 +55,14 @@ ins</textarea>
     </div>
 
 
-    <h2><br> Select cells on group 1</h2>
-    <p> Hold shift to select a range of cells</p>
+    <h2><br> Select cells on group 1 <span style="font-size:0.4em">(Hold shift to select a range of cells)</span> </h2>
+  
     <div class="table_container">
         <table id="FIRST_TABLE" cellspacing="0" class="cell-border stripe display compact"
                style="border-bottom: none; " width="100%"></table>
     </div>
 
-    <h2><br> Select cells on group 2</h2>
-    <p> Hold shift to select a range of cells</p>
+    <h2><br> Select cells on group 2 <span style="font-size:0.4em">(Hold shift to select a range of cells)</span>  </h2>
     <div class="table_container">
         <table id="SECOND_TABLE" cellspacing="0" class="cell-border stripe display compact"
                style="border-bottom: none; " width="100%"></table>
