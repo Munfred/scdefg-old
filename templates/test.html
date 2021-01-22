@@ -1,25 +1,26 @@
-{% extends "template.html" %}
-{% block title %}
-
-    <title> 🌋 Results 💥 </title>
-
-{% endblock %}
-{% block body %}
-
-    <script type="text/javascript" src="/static/js/submission_logic.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+</style>
+<title> 🌋 Results 💥 </title>
 
 
-    <div class="normal">
-        <div>
-            <h1 id="results"> This is the results page </h1>
-            
-            Hello. <a href="/get_results_csv">
-            Click to download the csv results.</a>
-            
-        </div>
-
-
+<div class="normal">
+    <div>
+        <h2 style="font-family: Lato"> Differential Expression Results  (takes a moment to load)</h1>
+        <p style="font-family: Lato">
+            <ul>
+                <li> <a href="/get_results_csv"> Download a csv file with all DE results.</a> </li>
+                <li> <a href="/get_groups_csv"> Download a csv file of the cell types and experiments in each group.</a> </li>
+                <li> <a href="/get_plot"> Download this plot.</a> </li>
+                <li> <a href="/"> Run another rest.</a> </li>
+            </ul>
+        </p>
+        
     </div>
-{% endblock %}
+
+    <div>
+        <iframe id="igraph" scrolling="no" style="border:none;" 
+        seamless="seamless" src="/static/fig.html" 
+        height="90%" width="90%"></iframe>'
+    </div>
+</div>
