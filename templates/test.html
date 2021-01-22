@@ -1,7 +1,7 @@
 {% extends "template.html" %}
 {% block title %}
 
-    <title> 🌋 TEST 💥 </title>
+    <title> 🌋 Results 💥 </title>
 
 {% endblock %}
 {% block body %}
@@ -13,25 +13,13 @@
 
     <div class="normal">
         <div>
-            <h1 id="-wormcells-de-exploring-c-elegans-single-cell-rna-sequencing-data"><code>wormcells-de</code>:
-                THIS IS A TESTTTT</h1>
-
-
-{% filter markdown %}
-
-{% include 'introduction.md' %}
-
-{% endfilter %}
-
-
-{% filter markdown %}
-
-{% include 'about-the-data.md' %}
-
-{% endfilter %}
-
-
-
+            <h1 id="results"> This is the results page </h1>
+            
+            Hello. <a href="/get_results_csv">
+            Click to download the csv results.</a>
+            
         </div>
+
+
     </div>
 {% endblock %}

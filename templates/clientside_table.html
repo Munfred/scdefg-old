@@ -31,14 +31,11 @@
         <div>
             {% filter markdown %}
 
-                {% include 'introduction.md' %}
+                {% include 'introduction.txt' %}
 
             {% endfilter %}
         </div>
 
-        <h3>1) Enter your email to receive results</h3>
-        <h3>2) Select cells in the tables below</h3>
-        <h3>3) Optional: choose genes to highlight</h3>
         <form>
             <div>
                 <p>If you would like to highlight genes on the resulting volcano plot, add one gene per line. <br>
@@ -50,15 +47,6 @@ flp
 ins</textarea>
             </div>
 
-            <br> <br>
-            <div>
-                <h4> Enter your email:</h4>
-                <input type="email" id="email" name="email" size=40>
-                <br>
-                <h4> (Optional) Provide a name for your job:</h4>
-                <input type="text" id="text" name="text" pattern="[a-zA-Z0-9!@#$%^*_|]{6,25}" size=40>
-
-            </div>
         </form>
 
 
@@ -84,20 +72,4 @@ ins</textarea>
         <table id="SECOND_TABLE" cellspacing="0" class="cell-border stripe display compact"
                style="border-bottom: none; " width="100%"></table>
     </div>
-
-    <div class="normal">
-    <div>
-        <br>
-        <br>
-        <br>
-
-        {% filter markdown %}
-            {% include 'about-the-data.md' %}
-        {% endfilter %}
-
-        {% include 'bayes_factors.html' %}
-
-
-    </div>
-    <div>
 {% endblock %}
