@@ -80,7 +80,9 @@ $(document).ready(function () {
         }
 
         if (ncells1 != 0 && ncells2 != 0) {
-            var confirmation = confirm('You are about to submit: \n ' + ncells1 + ' cells in group 1 and ' + ncells2 + ' cells in group 2.' )
+            
+            var confirmation = true;
+            
             if (confirmation == true) {
                 json_genes = JSON.stringify(genes);
 
@@ -93,6 +95,7 @@ $(document).ready(function () {
                 // location.reload();
                 location.replace("/test");
             }
+            alert('You submitted \n ' + ncells1 + ' cells in group 1 and ' + ncells2 + ' cells in group 2. \n ...it will take a few seconds to process');
         }
         ;
     });
